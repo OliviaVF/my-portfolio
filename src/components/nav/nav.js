@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
+import About from '../about/about';
+import {BrowserRouter as Route} from 'react-router-dom';
 
 var NavBar = React.createClass({
   render: function(){
@@ -63,11 +65,15 @@ var navbar = {};
 navbar.brand =
   {text: "Olivia Vaughan-Fowler"};
 navbar.links = [
-  {linkTo: "#", text: "About Me"},
+  {linkTo: "/about", text: "About Me"},
   {linkTo: "#", text: "Portfolio"},
   {linkTo: "https://github.com/OliviaVF", text: "Github"},
   {linkTo: "https://www.linkedin.com/in/olivia-vaughan-fowler/", text: "LinkedIn"},
 ];
+
+<Route path="/about" render={()=> {return(
+  <About />)}}>
+</Route>
 
 ReactDOM.render(
   <NavBar {...navbar} />,

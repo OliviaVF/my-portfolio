@@ -1,3 +1,19 @@
 body {
-  background: #00A289;
-}
+  font-family: 'Josefin Sans', sans-serif; }
+
+* {
+  font-family: inherit; }
+
+.navbar-inverse .navbar-nav li a {
+  color: white;
+  font-size: 12px;
+  padding-left: 100px;
+  letter-spacing: 3px; }
+
+.navbar-inverse .navbar-brand {
+  color: white;
+  letter-spacing: 3px; }
+
+.navbar {
+  background: linear-gradient(to bottom, #00B598 8%, #00a289 100%);
+  border: none; }

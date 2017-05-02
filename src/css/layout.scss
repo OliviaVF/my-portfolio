@@ -1,0 +1,35 @@
+$green: #00a289;
+$grey: #D3D3D3;
+$yellow: #fce650;
+$red: #ef4c59;
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+* {
+  font-family: inherit;
+}
+
+.navbar-inverse {
+  .navbar-nav {
+    li {
+      a {
+        color: white;
+        font-size: 12px;
+        padding-left: 100px;
+        letter-spacing: 3px;
+      }
+    }
+  }
+  .navbar-brand {
+    color: white;
+    letter-spacing: 3px;
+  }
+}
+
+
+.navbar {
+  background: linear-gradient(to bottom,#00B598 8%,$green 100%);
+  border: none;
+}
