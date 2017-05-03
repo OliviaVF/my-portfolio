@@ -1,5 +1,5 @@
 body {
-  font-family: 'Josefin Sans', sans-serif; }
+  font-family: 'Raleway', sans-serif; }
 
 * {
   font-family: inherit; }
@@ -15,5 +15,34 @@ body {
   letter-spacing: 3px; }
 
 .navbar {
-  background: linear-gradient(to bottom, #00B598 8%, #00a289 100%);
+  background: #00a289;
   border: none; }
+
+.about {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center; }
+
+.about p {
+  font-size: 18px; }
+
+.about .github, .about .linkedin {
+  height: 40px;
+  width: 40px;
+  background: url("../components/about/github.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: inline-block;
+  margin: 20px; }
+
+.about .linkedin {
+  background: url("../components/about/linkedin.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.about .words {
+  margin-top: 50px;
+  margin-bottom: 50px; }

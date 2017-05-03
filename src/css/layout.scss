@@ -4,7 +4,7 @@ $yellow: #fce650;
 $red: #ef4c59;
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 * {
@@ -30,6 +30,37 @@ body {
 
 
 .navbar {
-  background: linear-gradient(to bottom,#00B598 8%,$green 100%);
+  background: $green;
   border: none;
+}
+
+.about {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  p {
+    font-size: 18px;
+  }
+  .github {
+    height: 40px;
+    width: 40px;
+    background: url('../components/about/github.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px;
+  }
+  .linkedin {
+    background: url('../components/about/linkedin.png');
+    @extend .github;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .words {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }

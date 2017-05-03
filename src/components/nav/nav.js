@@ -2,11 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
-import About from '../about/about';
-import {BrowserRouter as Route} from 'react-router-dom';
 
-var NavBar = React.createClass({
-  render: function(){
+class NavBar extends React.Component {
+  render() {
     return(
       <nav className="navbar navbar-inverse">
         <div className="container-fluid">
@@ -26,20 +24,20 @@ var NavBar = React.createClass({
       </nav>
     );
   }
-});
+};
 
-var NavBrand = React.createClass({
-  render: function(){
-    return (
+class NavBrand extends React.Component {
+  render() {
+    return(
       <a className="navbar-brand" href={this.props.linkTo}>{this.props.text}</a>
     );
   }
-});
+};
 
-var NavMenu = React.createClass({
-  render: function(){
+class NavMenu extends React.Component {
+  render() {
     var links = this.props.links.map(function(link){
-        return (
+      return(
           <NavLink linkTo={link.linkTo} text={link.text} active={link.active} />
         );
       });
@@ -49,16 +47,15 @@ var NavMenu = React.createClass({
       </ul>
     );
   }
-});
+};
 
-
-var NavLink = React.createClass({
-  render: function(){
+class NavLink extends React.Component {
+  render() {
     return(
       <li className={(this.props.active ? "active" : "")}><a href={this.props.linkTo}>{this.props.text}</a></li>
     );
   }
-});
+};
 
 // set data
 var navbar = {};
@@ -66,14 +63,8 @@ navbar.brand =
   {text: "Olivia Vaughan-Fowler"};
 navbar.links = [
   {linkTo: "/about", text: "About Me"},
-  {linkTo: "#", text: "Portfolio"},
-  {linkTo: "https://github.com/OliviaVF", text: "Github"},
-  {linkTo: "https://www.linkedin.com/in/olivia-vaughan-fowler/", text: "LinkedIn"},
+  {linkTo: "#", text: "Portfolio"}
 ];
-
-<Route path="/about" render={()=> {return(
-  <About />)}}>
-</Route>
 
 ReactDOM.render(
   <NavBar {...navbar} />,
