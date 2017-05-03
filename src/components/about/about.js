@@ -1,10 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
 
-export class About extends React.Component {
+export default class About extends React.Component {
   render() {
     return(
       <div className="container">
@@ -30,8 +29,3 @@ export class About extends React.Component {
     );
   }
 };
-
-ReactDOM.render(
-  <About />,
-  document.getElementById("about")
-);

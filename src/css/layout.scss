@@ -12,6 +12,8 @@ body {
 }
 
 .navbar-inverse {
+  background: $green;
+  border: none;
   .navbar-nav {
     li {
       a {
@@ -24,14 +26,8 @@ body {
   }
   .navbar-brand {
     color: white;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
   }
-}
-
-
-.navbar {
-  background: $green;
-  border: none;
 }
 
 .about {
@@ -62,5 +58,43 @@ body {
   .words {
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+}
+
+.portfolio {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  .eastenders {
+    height: 350px;
+    width: 440px;
+    background: url('../components/portfolio/eastenders.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px;
+  }
+  .pylon1 {
+    @extend .eastenders;
+    background: url('../components/portfolio/pylon1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .accommodata {
+    @extend .eastenders;
+    background: url('../components/portfolio/accommodata.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .pylon2 {
+    @extend .eastenders;
+    background: url('../components/portfolio/pylon2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }

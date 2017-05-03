@@ -1,24 +1,33 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
 
-class NavBar extends React.Component {
+const navbar = {};
+navbar.brand =
+  {linkTo: "/", text: "Olivia Vaughan-Fowler"};
+navbar.links = [
+  {linkTo: "/about", text: "About Me"},
+  {linkTo: "/portfolio", text: "My Portfolio"}
+];
+
+export default class NavBar extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state={ ...navbar }
+  }
   render() {
     return(
       <nav className="navbar navbar-inverse">
         <div className="container-fluid">
           <div className="navbar-header">
-            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
               <span className="sr-only">Toggle navigation</span>
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <NavBrand text={this.props.brand.text} />
+            <NavBrand linkTo={this.state.brand.linkTo} text={this.state.brand.text} />
           </div>
           <div className="collapse navbar-collapse" id="navbar-collapse">
-            <NavMenu links={this.props.links} />
+            <NavMenu links={this.state.links} />
           </div>
         </div>
       </nav>
@@ -56,17 +65,3 @@ class NavLink extends React.Component {
     );
   }
 };
-
-// set data
-var navbar = {};
-navbar.brand =
-  {text: "Olivia Vaughan-Fowler"};
-navbar.links = [
-  {linkTo: "/about", text: "About Me"},
-  {linkTo: "#", text: "Portfolio"}
-];
-
-ReactDOM.render(
-  <NavBar {...navbar} />,
-  document.getElementById("navbar")
-);

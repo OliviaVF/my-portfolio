@@ -4,45 +4,69 @@ body {
 * {
   font-family: inherit; }
 
-.navbar-inverse .navbar-nav li a {
-  color: white;
-  font-size: 12px;
-  padding-left: 100px;
-  letter-spacing: 3px; }
-
-.navbar-inverse .navbar-brand {
-  color: white;
-  letter-spacing: 3px; }
-
-.navbar {
+.navbar-inverse {
   background: #00a289;
   border: none; }
+  .navbar-inverse .navbar-nav li a {
+    color: white;
+    font-size: 12px;
+    padding-left: 100px;
+    letter-spacing: 3px; }
+  .navbar-inverse .navbar-brand {
+    color: white;
+    letter-spacing: 2px; }
 
 .about {
   width: 70%;
   margin: 0 auto;
   text-align: center; }
+  .about p {
+    font-size: 18px; }
+  .about .github, .about .linkedin {
+    height: 40px;
+    width: 40px;
+    background: url("../components/about/github.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px; }
+  .about .linkedin {
+    background: url("../components/about/linkedin.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .about .words {
+    margin-top: 50px;
+    margin-bottom: 50px; }
 
-.about p {
-  font-size: 18px; }
-
-.about .github, .about .linkedin {
-  height: 40px;
-  width: 40px;
-  background: url("../components/about/github.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  display: inline-block;
-  margin: 20px; }
-
-.about .linkedin {
-  background: url("../components/about/linkedin.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.about .words {
-  margin-top: 50px;
-  margin-bottom: 50px; }
+.portfolio {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center; }
+  .portfolio .eastenders, .portfolio .pylon1, .portfolio .accommodata, .portfolio .pylon2 {
+    height: 350px;
+    width: 440px;
+    background: url("../components/portfolio/eastenders.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px; }
+  .portfolio .pylon1 {
+    background: url("../components/portfolio/pylon1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .portfolio .accommodata {
+    background: url("../components/portfolio/accommodata.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .portfolio .pylon2 {
+    background: url("../components/portfolio/pylon2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
