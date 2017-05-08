@@ -6,8 +6,8 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 export default class About extends React.Component {
   render() {
     return(
-      <div className="container">
-        <div className="about">
+      <div className="container" id="outer-container">
+        <div className="about" id="page-wrap">
           <h1>About Me</h1>
           <div className="words">
             <p>After completing a degree in Philosophy, I spent 3 and a half years working for various start ups in wide-reaching, operational roles. I ended up project managing several tech builds which led to a fascination with development.</p>
@@ -22,6 +22,10 @@ export default class About extends React.Component {
 
           <a href="https://www.linkedin.com/in/olivia-vaughan-fowler/" target="_blank">
             <div className="linkedin"></div>
+          </a>
+
+          <a href="mailto:EMAILADDRESS">>
+            <div className="email"></div>
           </a>
 
         </div>

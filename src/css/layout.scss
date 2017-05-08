@@ -1,41 +1,77 @@
-$green: #00a289;
-$grey: #D3D3D3;
-$yellow: #fce650;
-$red: #ef4c59;
-
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color: #60658E;
 }
 
 * {
   font-family: inherit;
 }
 
-.navbar-inverse {
-  background: $green;
-  border: none;
-  .navbar-nav {
-    li {
-      a {
-        color: white;
-        font-size: 12px;
-        padding-left: 100px;
-        letter-spacing: 3px;
-      }
-    }
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 25px;
+  z-index: 2;
+  &:hover{
+    cursor: pointer;
   }
-  .navbar-brand {
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  a{
+    font-size: 25px;
     color: white;
-    letter-spacing: 2px;
   }
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .about {
   width: 70%;
   margin: 0 auto;
   text-align: center;
+  margin-top: 60px;
+  color: white;
   p {
-    font-size: 18px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: justify;
   }
   .github {
     height: 40px;
@@ -62,19 +98,19 @@ body {
 }
 
 .portfolio {
-  width: 90%;
+  width: 60%;
   margin: 0 auto;
   text-align: center;
+  color: white;
+  margin-top: 150px;
   .eastenders {
-    height: 350px;
-    width: 440px;
-    background: url('../components/portfolio/eastenders.png');
+    background-image: url('../components/portfolio/eastenders.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 450px;
+    width: 100%;
     cursor: pointer;
-    display: inline-block;
-    margin: 20px;
   }
   .pylon1 {
     @extend .eastenders;
@@ -96,5 +132,49 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .info {
+    padding-top: 20vh;
+    padding-bottom: 72vh;
+    p {
+      font-size: 20px;
+      letter-spacing: 1px;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+    h1 {
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      margin-bottom: 30px;
+    }
+    button {
+      border: 2px solid white;
+      background-color: transparent;
+      height: 70px;
+      width: 200px;
+      margin: 30px;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+      }
+    }
+  }
+}
+
+.home {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  border: 3px solid white;
+  padding: 30px;
+  color: white;
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: white;
+    font-size: 60px;
   }
 }

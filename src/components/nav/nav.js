@@ -1,67 +1,27 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import { scaleRotate as Menu } from 'react-burger-menu';
 
-const navbar = {};
-navbar.brand =
-  {linkTo: "/", text: "Olivia Vaughan-Fowler"};
-navbar.links = [
-  {linkTo: "/about", text: "About Me"},
-  {linkTo: "/portfolio", text: "My Portfolio"}
-];
-
-export default class NavBar extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state={ ...navbar }
+export default class NavBar extends React.Component{
+  constructor(props){
+    super(props);
+    this.state= {
+      name: 'Olivia Vaughan-Fowler',
+      isOpen: false,
+    }
+    this.isMenuOpen = this.isMenuOpen.bind(this);
   }
-  render() {
+  isMenuOpen(){
+    return this.state.isOpen;
+  };
+
+  render(){
     return(
-      <nav className="navbar navbar-inverse">
-        <div className="container-fluid">
-          <div className="navbar-header">
-            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
-              <span className="sr-only">Toggle navigation</span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-            </button>
-            <NavBrand linkTo={this.state.brand.linkTo} text={this.state.brand.text} />
-          </div>
-          <div className="collapse navbar-collapse" id="navbar-collapse">
-            <NavMenu links={this.state.links} />
-          </div>
-        </div>
-      </nav>
-    );
+      <Menu pageWrapId={ "page-wrap" } isOpen={false} onStateChange={ this.isMenuOpen} outerContainerId={ "outer-container" }>
+       <Link id="home" className="menu-item" to="/home">Home</Link>
+       <Link id="about" className="menu-item" to="/about">About</Link>
+       <Link id="contact" className="menu-item" to="/portfolio">My Portfolio</Link>
+     </Menu>
+    )
   }
-};
-
-class NavBrand extends React.Component {
-  render() {
-    return(
-      <a className="navbar-brand" href={this.props.linkTo}>{this.props.text}</a>
-    );
-  }
-};
-
-class NavMenu extends React.Component {
-  render() {
-    var links = this.props.links.map(function(link){
-      return(
-          <NavLink linkTo={link.linkTo} text={link.text} active={link.active} />
-        );
-      });
-    return (
-      <ul className="nav navbar-nav">
-        {links}
-      </ul>
-    );
-  }
-};
-
-class NavLink extends React.Component {
-  render() {
-    return(
-      <li className={(this.props.active ? "active" : "")}><a href={this.props.linkTo}>{this.props.text}</a></li>
-    );
-  }
-};
+}

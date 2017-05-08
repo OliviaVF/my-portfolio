@@ -4,12 +4,22 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "ease-functions": "0.0.1",
     "node-sass": "^4.5.2",
     "react": "^15.5.4",
+    "react-3d-carousel": "0.0.6",
     "react-bootstrap": "^0.31.0",
     "react-burger-menu": "^2.0.1",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.1.1"
+  },
+  "keywords": [
+    "carousel",
+    "react",
+    "react-component"
+  ],
+  "peerDependencies": {
+    "react": ">=0.13.x < 1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",
