@@ -12,9 +12,8 @@ body {
   left: 36px;
   top: 25px;
   z-index: 3; }
-
-.bm-burger-button:hover {
-  cursor: pointer; }
+  .bm-burger-button:hover {
+    cursor: pointer; }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
@@ -34,14 +33,12 @@ body {
   background: #373a47;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em; }
-
-.bm-menu a {
-  font-size: 25px;
-  color: white; }
-
-.bm-menu a:hover {
-  text-decoration: none;
-  color: #60658E; }
+  .bm-menu a {
+    font-size: 25px;
+    color: white; }
+    .bm-menu a:hover {
+      text-decoration: none;
+      color: #60658E; }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
@@ -62,38 +59,33 @@ body {
   text-align: center;
   margin-top: 60px;
   color: white; }
-
-.about p {
-  font-size: 20px;
-  letter-spacing: 2px;
-  text-align: justify; }
-
-.about .github, .about .linkedin, .about .email {
-  height: 40px;
-  width: 40px;
-  background: url("../components/about/github.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  display: inline-block;
-  margin: 20px; }
-
-.about .linkedin {
-  background: url("../components/about/linkedin.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.about .email {
-  background: url("../components/about/email.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.about .words {
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  .about p {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: justify; }
+  .about .github, .about .linkedin, .about .email {
+    height: 40px;
+    width: 40px;
+    background: url("../components/about/github.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px; }
+  .about .linkedin {
+    background: url("../components/about/linkedin.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .about .email {
+    background: url("../components/about/email.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .about .words {
+    margin-top: 50px;
+    margin-bottom: 50px; }
 
 .portfolio {
   width: 60%;
@@ -101,65 +93,55 @@ body {
   text-align: center;
   color: white;
   margin-top: 150px; }
-
-.portfolio .eastenders, .portfolio .pylon1, .portfolio .accommodata, .portfolio .pylon2 {
-  background-image: url("../components/portfolio/eastenders.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 450px;
-  width: 100%;
-  cursor: pointer; }
-
-.portfolio .pylon1 {
-  background: url("../components/portfolio/pylon1.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.portfolio .accommodata {
-  background: url("../components/portfolio/accommodata.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.portfolio .pylon2 {
-  background: url("../components/portfolio/pylon2.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.portfolio .info {
-  padding-top: 20vh;
-  padding-bottom: 34vh; }
-
-.portfolio .info p {
-  font-size: 20px;
-  letter-spacing: 1px;
-  text-align: justify;
-  margin-bottom: 30px; }
-
-.portfolio .info h1 {
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  margin-bottom: 30px; }
-
-.portfolio .info button {
-  border: 2px solid white;
-  background-color: transparent;
-  height: 70px;
-  width: 200px;
-  margin: 30px; }
-
-.portfolio .info button:hover {
-  border-color: #373A47; }
-
-.portfolio .info button a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 6px; }
+  .portfolio .eastenders, .portfolio .pylon1, .portfolio .accommodata, .portfolio .pylon2 {
+    background-image: url("../components/portfolio/eastenders.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 100%;
+    cursor: pointer; }
+  .portfolio .pylon1 {
+    background: url("../components/portfolio/pylon1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .portfolio .accommodata {
+    background: url("../components/portfolio/accommodata.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .portfolio .pylon2 {
+    background: url("../components/portfolio/pylon2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .portfolio .info {
+    padding-top: 20vh;
+    padding-bottom: 34vh; }
+    .portfolio .info p {
+      font-size: 20px;
+      letter-spacing: 1px;
+      text-align: justify;
+      margin-bottom: 30px; }
+    .portfolio .info h1 {
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      margin-bottom: 30px; }
+    .portfolio .info button {
+      border: 2px solid white;
+      background-color: transparent;
+      height: 70px;
+      width: 200px;
+      margin: 30px; }
+      .portfolio .info button:hover {
+        border-color: #373A47; }
+      .portfolio .info button a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 6px; }
 
 .home {
   height: 100vh;
