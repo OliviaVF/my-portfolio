@@ -7,7 +7,7 @@ export default class Layout extends React.Component {
     return (
       <div className="container" id="outer-container">
         <div className="home" id="page-wrap">
-          <h1>Olivia Vaughan-Fowler</h1>
+          <div className="home"></div>
         </div>
       </div>
     );

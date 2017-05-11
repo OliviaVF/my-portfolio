@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './components/home';
+import Home from './components/home/home';
 import About from './components/about/about';
 import SimpleSlider from './components/portfolio/portfolio';
 import NavBar from './components/nav/nav';

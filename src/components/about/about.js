@@ -24,7 +24,7 @@ export default class About extends React.Component {
             <div className="linkedin"></div>
           </a>
 
-          <a href="mailto:EMAILADDRESS">>
+          <a href="mailto:opvf22@gmail.com">
             <div className="email"></div>
           </a>
 
