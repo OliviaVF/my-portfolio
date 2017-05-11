@@ -39,6 +39,10 @@ body {
   font-size: 25px;
   color: white; }
 
+.bm-menu a:hover {
+  text-decoration: none;
+  color: #60658E; }
+
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
   fill: #373a47; }

@@ -43,6 +43,10 @@ body {
   a{
     font-size: 25px;
     color: white;
+    &:hover {
+      text-decoration: none;
+      color: #60658E;
+    }
   }
 }
 
